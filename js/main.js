@@ -29,7 +29,7 @@ function showNavBar() {
   $("#navBar .left-nav .links").slideToggle(1200);
 }
 
-$("#navBar .right-nav i").on("click", function () {
+$("#navBar .right-nav .open-close").on("click", function () {
   if ($("#navBar .right-nav .open-close").hasClass("fa-bars")) {
     showNavBar();
   } else {
