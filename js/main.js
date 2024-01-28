@@ -16,7 +16,7 @@ function hideNavBar() {
     transform: `translateX(${-navWidth}px)`,
     transition: " 1s",
   });
-  $("#navBar .right-nav i").removeClass("fa-xmark").addClass("fa-bars");
+  $("#navBar .right-nav .open-close").removeClass("fa-xmark").addClass("fa-bars");
   $("#navBar .left-nav .links").slideToggle(500);
 }
 
@@ -25,12 +25,12 @@ function showNavBar() {
     transform: `translateX(0)`,
     transition: " 1s",
   });
-  $("#navBar .right-nav i").removeClass("fa-bars").addClass("fa-xmark");
+  $("#navBar .right-nav .open-close").removeClass("fa-bars").addClass("fa-xmark");
   $("#navBar .left-nav .links").slideToggle(1200);
 }
 
 $("#navBar .right-nav i").on("click", function () {
-  if ($("#navBar .right-nav i").hasClass("fa-bars")) {
+  if ($("#navBar .right-nav .open-close").hasClass("fa-bars")) {
     showNavBar();
   } else {
     hideNavBar();
