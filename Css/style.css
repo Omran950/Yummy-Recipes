@@ -11,6 +11,7 @@
 
 body {
   overflow: hidden;
+  font-family: var(--main-font);
 }
 
 :root {
@@ -19,10 +20,6 @@ body {
   --trans: 500ms;
   --main-color: #fcca0e;
   --bg-color: #0d0d0d;
-}
-
-body {
-  font-family: var(--main-font);
 }
 
 a {
